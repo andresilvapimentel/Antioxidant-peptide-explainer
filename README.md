@@ -4,7 +4,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19687304.svg)](https://doi.org/10.5281/zenodo.19687304)
 
-Antioxidant peptide explainer is a code to classify the antioxidation property of peptide sequences and generate explanations of k-mers or motifs that cause allergy using SHapley Additive exPlanations (SHAP), Local Interpretable Model-Agnostic Explanations (LIME) and Anchors explanations.
+Antioxidant peptide explainer is a code to classify the antioxidation property of peptide sequences and generate explanations of k-mers or motifs that influence antioxidation using SHapley Additive exPlanations (SHAP), Local Interpretable Model-Agnostic Explanations (LIME) and Anchors explanations.
 
 The Antioxidant peptide explainer framework is highly versatile (coded in Google Colab and Jupyter Notebook), with options that can be further developed and optimized by the users: it can accept any user-defined datasets (or datasets available in any repository). It uses pyTorch library for tensor computation with GPU acceleration. The architecture of the classifier is composed of five principal components: (1) a Temporal Convolutional Network (TCN) branch, (2) a projection and attention mechanism applied to ESM embeddings from esm2_t6_8M_UR50D foundation model from the ESM2 library, a 12-layer transformer pre-trained on large protein corpora, (3) a feature fusion module, (4) a multi-layer LSTM block, and (5) a fully connected classification head. The classifier model was analyzed with different metrics (precision, accuracy, recall, MCC, F1 scores, Matthews correlation coefficient (MCC), and Cohen’s kappa score. Then, the confusion matrix is visualized.
 
